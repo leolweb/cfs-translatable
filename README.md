@@ -23,7 +23,7 @@ To get more info read the documentation.
 ## Screenshots:
 
 ### with gettext (faster)
-![Screenshot for CFS-Translatable with gettext (faster)](https://github.com/leolweb/cfs-translatable/blob/master/screenshot-1.jpg "CFS-Translatable with gettext (faster)")
+![Screenshot for CFS-Translatable with gettext (faster)](https://github.com/leolweb/cfs-translatable/blob/master/screenshot-1.png "CFS-Translatable with gettext (faster)")
 
 ### with shortcode (slower)
-![Screenshot for CFS-Translatable with shortcode (slower)](https://github.com/leolweb/cfs-translatable/blob/master/screenshot-2.jpg "CFS-Translatable with shortcode (slower)")
+![Screenshot for CFS-Translatable with shortcode (slower)](https://github.com/leolweb/cfs-translatable/blob/master/screenshot-2.png "CFS-Translatable with shortcode (slower)")
