@@ -1,6 +1,6 @@
 # Documentation
 
-## Install:
+## Install
 
 * Download
   - via ZIP/tarball available in the GitHub page
@@ -12,7 +12,7 @@
   - as embed in functions.php, example: `require WP_PLUGIN_DIR . "/cfs-translatable/index.php"
 
 
-## Usage:
+## Usage
 
 Define configuration constants directly in the WordPress configuration file (usually wp-config.php).
 
