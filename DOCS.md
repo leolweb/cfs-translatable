@@ -14,11 +14,11 @@
 
 ## Usage:
 
-Define configurations constants directly in the WordPress configuration file (normally wp-config.php).
+Define configuration constants directly in the WordPress configuration file (usually wp-config.php).
 
 ### with gettext (faster)
 
-It use gettext directly (it parse all fields in this way __( $field, $textdomain ) ), so is fast then light but more hard to use and mantains.
+It uses gettext directly (it parses all fields in this way __( $field, $textdomain ) ), so it's faster than light but more hard to use and mantains.
 You could generate a pot file to translate or a php file, so you can use the "msgmerge" tool or add the generated php file to gettext findable path(s).
 
 * to generate strings in a php file:
@@ -37,7 +37,7 @@ define( 'CFS_TRANSLATABLE_GENERATE_POT', true );
 
 ### with shortcodes (slower)
 
-It use preg_match_all() and array_combine(), the same way that use WordPress to manage shortcodes, it's slow due these functions but so easy to maintains, you could change direcly CFS fields without external files to translate.
+It uses preg_match_all() and array_combine(), in the same way that WordPress to manages shortcodes, it's slow due to these functions but so easy to maintains, you could change direcly CFS fields without external files to translate.
 
 ```php
 define( 'CFS_TRANSLATABLE_SHORTCODES', true );
@@ -45,10 +45,10 @@ define( 'CFS_TRANSLATABLE_SHORTCODES', true );
 
 in CFS fields use shortcodes like these:
 
-* ISO 639:1
+* ISO 639-1
 `[en]Custom field[/en][it]Campo personalizzato[/it][fr]Entrée personnalisé[/fr][es]Campo personalizado[/es][de]etc[/de][ru]...[/ru]`
 
-* ISO 639:2 (with hypens)
+* ISO 639-1 with ISO 3166 (hyphenated)
 `[en-us]Custom field[/en-us][it-IT]Campo personalizzato[/it-IT]`
 
 * with fallback (missing translations)
@@ -61,10 +61,10 @@ define( 'CFS_TRANSLATABLE_DEFAULT_LANGUAGE', 'it' );
 
 ## Constants
 
-CFS_TRANSLATABLE_SHORTCODES
-description: Enable shortcode support
+CFS_TRANSLATABLE_SHORTCODESdescription: Enable shortcode support
 type: boolean
 default: false
+
 
 CFS_TRANSLATABLE_TEXTDOMAIN
 description: Pass textdomain to use in gettext Fn
