@@ -2,11 +2,9 @@
 
 Add gettext and shortcode translation support into Custom Field Suite.
 
-__Requires:__ CFS 2.3, WordPress 3.0
-
-__Tested up to:__ CFS 2.4, WordPress 4.1.1
-
-__License:__ [GPL-2.0](http://www.gnu.org/licenses/gpl-2.0.html)
+__Requires:__ CFS 2.3, WordPress 3.0  
+__Tested up to:__ CFS 2.4, WordPress 4.1.1  
+__License:__ [GPL-2.0](http://www.gnu.org/licenses/gpl-2.0.html)  
 
 ## Documentation
 [Read the documentation](https://github.com/leolweb/cfs-translatable/blob/master/DOCS.md)
