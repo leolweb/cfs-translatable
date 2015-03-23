@@ -127,9 +127,6 @@ class cfs_translatable_addon
 		if ( $this->shortcodes ) :
 			add_action( 'cfs_translatable_language', array( $this, 'set_languages' ) );
 			add_filter( 'cfs_translatable_shortcode', array( $this, 'shortcode' ) );
-
-			// fire!
-			do_action( 'cfs_translatable_language' );
 		endif;
 
 		// Add filters 'cfs_matching_groups' and 'cfs_get_input_fields' to CFS api
@@ -430,7 +427,7 @@ class cfs_translatable_addon
 		$pot_fields = apply_filters( 'cfs_translatable_pot_fields', $this->pot_fields );
 
 		// Add action 'cfs_translate_generate_pot'
-		do_action( 'cfs_translatable_generate_pot' );
+		do_action( 'cfs_translatable_generate_pot', $pot_header, $pot_fields );
 
 		return $this->save_file( $this->pot_path, $pot_header, $pot_fields );
 	}
@@ -445,7 +442,7 @@ class cfs_translatable_addon
 		$php_fields = apply_filters( 'cfs_translatable_php_fields', $this->php_fields );
 
 		// Add action 'cfs_translate_generate_php'
-		do_action( 'cfs_translatable_generate_php' );
+		do_action( 'cfs_translatable_generate_php', $php_header, $php_fields );
 
 		return $this->save_file( $this->php_path, $php_header, $php_fields );
 	}
@@ -463,7 +460,7 @@ class cfs_translatable_addon
 		$content = $header . $fields;
 
 		// Add action 'cfs_translate_save_file'
-		do_action( 'cfs_translatable_save_file' );
+		do_action( 'cfs_translatable_save_file', $content );
 
 		if ( empty( $content ) )
 			return false;
