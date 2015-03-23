@@ -14,7 +14,7 @@ __License:__ [GPL-2.0](http://www.gnu.org/licenses/gpl-2.0.html)
 ## Install:
 
 - Download via ZIP/tarball or Git `https://github.com/leolweb/cfs-translatable.git`
-- Install uncompressing the tarball in /wp-content/plugins/
+- Install by uncompressing the tarball in /wp-content/plugins/
 - Activate as plug-in "CFS Translatable" directly in WordPress Admin -or- embed it in functions.php
 
 To get more info read the documentation.
