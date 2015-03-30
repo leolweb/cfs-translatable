@@ -99,7 +99,7 @@ class cfs_translatable_addon
 		$this->pot_filename = CFS_TRANSLATABLE_FILENAME . '.pot';
 		$this->pot_path = trailingslashit( CFS_TRANSLATABLE_PATH ) . $this->pot_filename;
 
-		$this->php_filename = CFS_TRANSLATABLE__FILENAME . '_strings.php';
+		$this->php_filename = CFS_TRANSLATABLE_FILENAME . '_strings.php';
 		$this->php_path = trailingslashit( CFS_TRANSLATABLE_PATH ) . $this->php_filename;
 
 		// Add Fn parse_field() to filter 'cfs_translatable_parse_fields'
@@ -401,7 +401,7 @@ class cfs_translatable_addon
 	 *
 	 * @return bool
 	 */
-	private function generate() {
+	public function generate() {
 		// Prepare fields
 		if( ! $this->prepare_fields() )
 			return false;
